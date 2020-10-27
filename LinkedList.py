@@ -24,7 +24,9 @@ class LinkedList:
 			current = current.next
 
 	def __str__(self):
+		print("str function libaray")
 		values = [str(x) for x in self]
+		
 		return '->'.join(values)
 
 	def __len__(self):
