@@ -6,7 +6,8 @@
 
 # There are two method - from GeeksforGeeks
 # Method 1 - Divide the array in slots of size n/k (Its not efficient use of array space)
-# Method 2 - A space efficient implementation
+# Method 2 - A space efficient implementation (implement this one!)
+# Method 3 - equal partitioning between each stacks
 
 # Need two array to store indexes of each top elements, indexes of next item
 # for the items in array arr[]
