@@ -27,8 +27,11 @@ class Stack:
 			return None
 
 		tmp = self.arr.pop()
+		prev = self.minVal
 		if tmp <= self.minVal:
-			self.minVal = 2*tmp - self.minVal
+			self.minVal = tmp + self.minVal
+			tmp = prev
+		
 		return tmp
 
 
@@ -43,7 +46,7 @@ class Stack:
 		if item <= self.minVal:
 			tmp = self.minVal
 			self.minVal = item
-			item = 2*item - self.minVal
+			item = tmp - self.minVal
 			
 		self.arr.append(item)
 
